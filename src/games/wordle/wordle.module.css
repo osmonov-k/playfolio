@@ -1,0 +1,156 @@
+/* Container for the entire game */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title of the game */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grid for the guesses */
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+/* Each row in the grid */
+.row {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* Each cell in the grid */
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Correct letter in the correct position */
+.cellCorrect {
+  background-color: #6aaa64;
+  color: white;
+  border-color: #6aaa64;
+}
+
+/* Correct letter in the wrong position */
+.cellPresent {
+  background-color: #c9b458;
+  color: white;
+  border-color: #c9b458;
+}
+
+/* Incorrect letter */
+.cellAbsent {
+  background-color: #787c7e;
+  color: white;
+  border-color: #787c7e;
+}
+
+/* On-screen keyboard */
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+/* Keyboard row */
+.keyboardRow {
+  display: flex;
+  gap: 5px;
+}
+
+/* Keyboard key */
+.keyboardKey {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  text-transform: uppercase;
+}
+
+.keyboardKey:hover {
+  background-color: #e9ecef;
+}
+
+/* Keyboard key states */
+.correct {
+  background-color: #6aaa64;
+  color: white;
+  border-color: #6aaa64;
+}
+
+.present {
+  background-color: #c9b458;
+  color: white;
+  border-color: #c9b458;
+}
+
+.absent {
+  background-color: #787c7e;
+  color: white;
+  border-color: #787c7e;
+}
+
+/* Popup for invalid words */
+.popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff4444;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  z-index: 1000;
+}
+
+/* Reset button */
+.resetButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .cell {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .keyboardKey {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
