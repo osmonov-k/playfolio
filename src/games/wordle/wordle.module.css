@@ -50,9 +50,9 @@
 
 /* Correct letter in the wrong position */
 .cellPresent {
-  background-color: #c9b458;
+  background-color: #fdc601;
   color: white;
-  border-color: #c9b458;
+  border-color: #fdc601;
 }
 
 /* Incorrect letter */
@@ -100,9 +100,9 @@
 }
 
 .present {
-  background-color: #c9b458;
+  background-color: #fdc601;
   color: white;
-  border-color: #c9b458;
+  border-color: #fdc601;
 }
 
 .absent {
@@ -131,7 +131,7 @@
   margin-right: 0.5rem;
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #007bff;
+  background-color: #1c61f2;
   color: white;
   border: none;
   border-radius: 5px;
@@ -146,11 +146,14 @@
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #007bff;
+  background-color: #1c61f2;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.rulesButton:hover {
+  background-color: #0056b3;
 }
 
 /* Mobile responsiveness */

@@ -1,0 +1,88 @@
+/* ConnectFourRules.module.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.example {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.exampleRow,
+.exampleCol,
+.exampleDiagonal {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.exampleRow {
+  flex-direction: row;
+}
+
+.exampleCol {
+  flex-direction: column;
+  align-items: center;
+}
+
+.exampleDiagonal {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.exampleDiagonal .cell {
+  position: absolute;
+  top: calc(30px * var(--i));
+  left: calc(30px * var(--i));
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 2px;
+  border: 1px solid #333;
+}
+
+.red {
+  background-color: #d9313d;
+}
+
+.yellow {
+  background-color: #fdc601;
+}
+
+.closeButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: #555;
+}
